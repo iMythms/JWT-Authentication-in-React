@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { signIn } from '../../services/authService'
 
 const initialFormData = {
@@ -26,7 +26,6 @@ const Signin = ({ getUserProfile }) => {
 			setMessage(error.response?.data?.error)
 			console.log(error)
 		}
-		console.log(formData)
 	}
 
 	return (

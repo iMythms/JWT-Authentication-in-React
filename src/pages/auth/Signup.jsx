@@ -28,8 +28,6 @@ const Signup = ({ getUserProfile }) => {
 			setMessage(error.response?.data?.error)
 			console.log(error)
 		}
-		console.log(formData)
-		setFormData(initialFormData)
 	}
 
 	const isFormInvalid = () => {
